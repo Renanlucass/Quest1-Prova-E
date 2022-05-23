@@ -1,3 +1,6 @@
+#Utilizei o while True para criar um loop,utilizei também o try e o except para tratar algumas exceções
+#Utilizei também o break,caso o laço fosse verdadeiro,para que não se repetice novamente
+
 while True: 
 
      try: 
@@ -9,6 +12,9 @@ while True:
      except:
              
             print('Por favor, digite um valor válido!') 
+
+#Novamente utilizei while True,para criar outro loop,dentro do while utilizei um if com um valor abaixo ou igual a 0,assim o programa pede outro valor ao usuário
+#Pedindo novamente um valor válido. E o else,caso o valor seja válido,será executado. E o programa continuará 
 
 while True:
     if valor <= 0:
@@ -22,6 +28,8 @@ while True:
         
         break
 
+#Imprimi as opções que são informadas
+
 print(''' 
 
 Forma de Pagamento 
@@ -32,6 +40,12 @@ Forma de Pagamento
 
 [3] Pagamento no boleto,tem um aumento de 15% se escolher ate 6 parcelas. E tem um aumento de 30% se escolher acima de 6 parcelas!''') 
 print()
+
+#While True novamente,criando outro loop. Utilizei if para chegar o primeiro valor,caso fosse o escolhido
+#Utilizei dois elif para chegar e executar as outras duas opções 
+#No segundo elif,tem duas opções de parcelas que são informadas ao usuário,ao escolher uma das duas o programa executa as somas do escolhido
+#Utilizei break em cada execução,para assim que o valor for informado,o programa ser finalizado 
+#Por último tem um else,caso seja informado um valor errado,o programa irá pedir novamente um valor válido 
 
 while True:
     op = input('Opção: ')
